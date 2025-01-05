@@ -7,14 +7,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import Profile from "./components/Doctor/Profile";
+// import AppSidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar";
 
 
 function App() {
   return (
     <div className="dashboard">
+      
       <header className="header">
         <h1>Doctor's Dashboard</h1>
       </header>
+      {/* <Sidebar/> */}
       <Insights />
       <div className="content">
         <div className="section">
