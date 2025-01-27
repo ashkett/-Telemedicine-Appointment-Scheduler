@@ -10,11 +10,10 @@
 // // import AppSidebar from "./components/Sidebar";
 // // import Sidebar from "./components/Sidebar";
 
-
 // function App() {
 //   return (
 //     <div className="dashboard">
-      
+
 //       <header className="header">
 //         <h1>Doctor's Dashboard</h1>
 //       </header>
@@ -27,7 +26,7 @@
 //         </div>
 //         <div className="section">
 //           <PrescriptionForm />
-      
+
 //         </div>
 //         <div className="section">
 //           <Profile/>
@@ -38,9 +37,6 @@
 // }
 
 // export default App;
-
-
-
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -53,6 +49,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import Landing from "./components/Landing/Landing";
 import Sidebar from "./components/Patient/Sidebar";
+import CalendarComponent from "./components/Common/Calander";
 
 function DoctorDashboard() {
   return (
@@ -60,7 +57,10 @@ function DoctorDashboard() {
       <header className="header">
         <h1>Doctor's Dashboard</h1>
         <Link to="/">
-        <button type="button" className="btn btn-info">Logout</button></Link>
+          <button type="button" className="btn btn-info">
+            Logout
+          </button>
+        </Link>
       </header>
       <div className="content">
         <Insights />
@@ -74,26 +74,31 @@ function DoctorDashboard() {
           <Profile />
         </div>
       </div>
+      <div className="content">
+        <div className="section">
+          <CalendarComponent />
+        </div>
+        <div className="section">
+          <CalendarComponent />
+        </div>
+      </div>
     </div>
   );
 }
 
-
-
- function PatientDashboard() {
+function PatientDashboard() {
   return (
     <div className="container-fluid">
-      <Sidebar/>
+      <Sidebar />
     </div>
-  )
+  );
 }
-
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Landing/>} />
+        <Route path="/" element={<Landing />} />
         <Route path="/doctor" element={<DoctorDashboard />} />
         <Route path="/patient" element={<PatientDashboard />} />
       </Routes>

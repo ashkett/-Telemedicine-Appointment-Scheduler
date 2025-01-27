@@ -89,6 +89,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../assets/css/Sidebar.css"; // Add a CSS file for custom styles
+import CalendarComponent from "../Common/Calander"
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -167,6 +168,14 @@ function Sidebar() {
         }}
         onClick={toggleSidebar}
       ></div>
+
+<div className="">
+<CalendarComponent/>
+
+</div>
+
+
+
     </div>
   );
 }

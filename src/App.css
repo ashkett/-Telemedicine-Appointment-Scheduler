@@ -29,7 +29,7 @@ body {
 .section {
   flex: 1;
   min-width: 300px;
-  background: #e6f7ff;
+  background: #fff;
   border: 1px solid #cce7ff;
   border-radius: 8px;
   padding: 1rem;
