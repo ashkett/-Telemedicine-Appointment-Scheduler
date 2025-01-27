@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from "../../assets/img/doctor_pfp.png"
 
 function Profile() {
   const [doctorInfo, setDoctorInfo] = useState(null);
@@ -35,10 +36,10 @@ function Profile() {
             {/* Profile Picture Placeholder */}
             <div className="col-md-3 text-center">
               <img
-                src="https://via.placeholder.com/150"
+                src={logo}
                 alt="Doctor"
                 className="rounded-circle img-fluid"
-                style={{ width: "150px", height: "150px" }}
+                style={{ width: "100px", height: "100px" }}
               />
             </div>
 

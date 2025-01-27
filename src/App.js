@@ -45,7 +45,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AppointmentList from "./components/Doctor/AppointmentList";
-import PrescriptionForm from "./components/Doctor/PrescriptionForm";
+import PrescriptionGenerator from "./components/Doctor/PrescriptionForm";
 import Insights from "./components/Doctor/Insights";
 import Profile from "./components/Doctor/Profile";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -68,7 +68,7 @@ function DoctorDashboard() {
           <AppointmentList />
         </div>
         <div className="section">
-          <PrescriptionForm />
+          <PrescriptionGenerator />
         </div>
         <div className="section">
           <Profile />
