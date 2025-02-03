@@ -165,11 +165,13 @@ const PrescriptionGenerator = () => {
   
 
   return (
-    <div className="container mt-5">
-      <h2>Prescription Generator</h2>
+    <div className="container mt-3">
+      <h2 className='text-center mb-3'>Prescription Generator</h2>
+      <div className="container justify-content-center d-flex">
       <Button variant="primary" onClick={() => setShowModal(true)}>
         Open Prescription Dialog
       </Button>
+      </div>
 
       {/* Modal */}
       <Modal show={showModal} onHide={() => setShowModal(false)}>
