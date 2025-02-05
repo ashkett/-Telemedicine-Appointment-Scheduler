@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "telemed",
   "version": "1.0.0",
   "main": "index.js",
@@ -9,6 +10,17 @@
     "server": "nodemon server.js"
   },
   "keywords": [],
+=======
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+>>>>>>> da05cc051b69c560ede27383f9ee76b145881147
   "author": "",
   "license": "ISC",
   "description": "",
@@ -17,7 +29,10 @@
     "cloudinary": "^2.5.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+<<<<<<< HEAD
     "ejs": "^3.1.10",
+=======
+>>>>>>> da05cc051b69c560ede27383f9ee76b145881147
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5",
