@@ -50,7 +50,7 @@ import "./App.css";
 import Landing from "./components/Landing/Landing";
 import Sidebar from "./components/Patient/Sidebar";
 import CalendarComponent from "./components/Common/Calander";
-import GoogleFitSync from "./components/Patient/WearableCard";
+import GoogleFitDashboard from "./components/Patient/WearableCard";
 import Form from "./components/Patient/SummrizerForm";
 
 function DoctorDashboard() {
@@ -92,7 +92,7 @@ function PatientDashboard() {
   return (
     <div className="container-fluid">
       <Sidebar />
-      <GoogleFitSync/>
+      <GoogleFitDashboard/>
       <br />
       <Form/>
     </div>
