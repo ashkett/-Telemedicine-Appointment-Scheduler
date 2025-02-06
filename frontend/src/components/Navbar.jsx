@@ -1,18 +1,11 @@
-<<<<<<< HEAD
 import React, { useState, useContext } from "react";
 import { assets } from "../assets/assets";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext.jsx";
-=======
-import React, { useState } from "react";
-import { assets } from "../assets/assets";
-import { NavLink, useNavigate } from "react-router-dom";
->>>>>>> da05cc051b69c560ede27383f9ee76b145881147
 
 const Navbar = () => {
   const navigate = useNavigate();
 
-<<<<<<< HEAD
   const {token,setToken} = useContext(AppContext)
 
   const [showMenu, setShowMenu] = useState(false);
@@ -23,10 +16,6 @@ const logout = () => {
   
 }
 
-=======
-  const [showMenu, setShowMenu] = useState(false);
-  const [token, setToken] = useState(true);
->>>>>>> da05cc051b69c560ede27383f9ee76b145881147
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
@@ -106,11 +95,7 @@ const logout = () => {
                   My Appointments
                 </p>
                 <p
-<<<<<<< HEAD
                   onClick={logout}
-=======
-                  onClick={() => setToken(false)}
->>>>>>> da05cc051b69c560ede27383f9ee76b145881147
                   className="hover:text-black cursor-pointer"
                 >
                   Logout
